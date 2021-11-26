@@ -1,5 +1,6 @@
 # Custom-Transformer-for-Encoding-Categorical-Data
-A Custom Transformer built to automatically label or one-hot encode categorical data. 
+A Custom Transformer built to automatically one-hot or label encode categorical data. <br />
+It adds a level of automation to the process of encoding categorical variables during data preprocessing as well as simultaneously expanding the functionality of Scikit-Learn's built-in One-Hot and Label encoders by being able to perform encoding transformations while there are missing values present, and preserve their state afterwards.
 
 The custom transformer, arbitrarily named `EncoderbyCol`, accepts a dictionary (as a parameter), that has encoding methods - "`onehot`" or "`label`" (representing One-Hot, or Label encoding respectively), as its keys, and the column names of the features to be encoded by these methods, respectively, as the values. 
 The encoding method performed on each column is specified in the dictionary's keys; the DataFrame is transformed by the encoders.
